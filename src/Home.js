@@ -38,7 +38,7 @@ function Home()
      className='home d-flex text-center'
      >
       
-    <Row>
+    <Row className='gx-0'>
       <Col xs={12} lg={6} >
        <div className='intro overflow-x-auto'>
           <p className='main'>Hey there, I'm <span className="text-uppercase fw-bolder">Sreekar Komanduri,</span> a Frontend Developer passionate about design and technology.</p>
