@@ -23,9 +23,14 @@ body
     hsl(318deg 100% 50%) 92%,
     hsl(287deg 100% 50%) 97%,
     hsl(255deg 100% 50%) 100%
-  );  scroll-behavior: smooth;
+  );
+  scroll-behavior: smooth;
   color: white;
 }
+
+
+
+/**********************************************  NAVBAR  ***********************************************************/
 
 .nav-bar
 {
@@ -63,20 +68,21 @@ body
   color: #FFFFFF;
 }
 
+
+
+/**********************************************  HOME  ***********************************************************/
+
 .home
 {
   margin: 3rem 1rem 2rem;
   cursor: pointer;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 .intro
 {
-  /* background-color: #DB162F; */
-  /* color: whitesmoke; */
-  /* border: 2px solid black; */
-  border-radius: 7px;
   padding: 1rem;
+  margin-bottom: 1rem;
   transition: box-shadow 0.5s ease-in;
 }
 
@@ -88,6 +94,11 @@ body
 .main
 {
   font-size: 1.5rem;
+}
+
+.main span
+{
+  font-size: 1.75rem;
 }
 
 .sub
@@ -111,6 +122,10 @@ body
   box-shadow: 0 0 20px 10px #C0FDFB;
 }
 
+
+
+/**********************************************  ABOUT  ***********************************************************/
+
 .about
 {
   flex-direction: column;
@@ -118,8 +133,7 @@ body
   text-align: center;
   min-height: 90vh;
   margin: 4rem 1rem;
-  padding: 1rem;
-  border-radius: 25px;
+  padding: 1rem 0;
 }
 
 .about-me-header
@@ -135,6 +149,7 @@ body
   font-size: 1rem;
   line-height: 35px;
   padding: 1rem;
+  font-weight: 500;
 }
 
 .projects-brief
@@ -143,17 +158,18 @@ body
   line-height: 30px;
   padding: 1rem;
   text-align: start;
+  font-weight: 500;
 }
 
 .projects-button
 {
-  margin-bottom: 1rem;
-  width: 200px;
+  width: 180px;
   padding: 15px 10px;
   align-self: center;
   background-color: #58FCEC;
   color: black;
-  border: 3px solid black;
+  border: 1px solid black;
+  font-weight: 600;
 }
 
 .projects-button:hover
@@ -162,12 +178,15 @@ body
   color: #113537;
 }
 
+
+/**********************************************  SKILLS  ***********************************************************/
+
+
 .skills
 {
   flex-direction: column;
   margin: 4rem 1rem;
   padding: 1rem;
-  min-height: 100vh;
   border-radius: 10px;
 }
 
@@ -184,7 +203,7 @@ body
 {
   margin-top: 2.5rem;
   text-align: center;
-  row-gap: 5rem;
+  row-gap: 3rem;
 }
 
 .skills-icons p
@@ -195,13 +214,11 @@ body
 
 .fa-brands
 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .skills-card
 {
-  width: 200px;
-  height: 150px;
   background-color: #D9FFF5;
   animation:box-shadow-color 3s infinite;
 }
@@ -210,24 +227,28 @@ body
 {
   0%
   {
-    box-shadow: 0 0 4px 7px #352D39;
+    box-shadow: 0 0 4px 5px #352D39;
   }
 
   25% 
   {
-    box-shadow: 0 0 7px 7px #00F6ED    ;  
+    box-shadow: 0 0 7px 5px #00F6ED    ;  
   }
 
   50%
   {
-    box-shadow: 0 0 7px 7px #FCFCFC    ;
+    box-shadow: 0 0 7px 5px #FCFCFC    ;
   }
 
   100%
   {
-    box-shadow: 0 0 3px 7px #C0D461 ;
+    box-shadow: 0 0 3px 5px #C0D461 ;
   }
 }
+
+
+
+/**********************************************  PROJECTS  ***********************************************************/
 
 
 .projects
@@ -296,6 +317,10 @@ body
 }
 
 
+
+/**********************************************  CERTIFICATES  ***********************************************************/
+
+
 .certificates
 {
   flex-direction: column;
@@ -314,11 +339,11 @@ body
   font-weight: 800;
   margin-top: 1rem;
 }
-
+/* 
 .certificate-pics
 {
   margin: 2rem 1rem;
-}
+} */
 
 .p-image
 {
@@ -332,6 +357,11 @@ body
   width: 450px;
   height: 300px;
 }
+
+
+
+/**********************************************  CONTACT  ***********************************************************/
+
 
 .contact
 {
@@ -391,4 +421,114 @@ body
 .github
 {
   margin-top: 1rem;
+}
+
+
+
+
+/**********************************************  MEDIA QUERIES ( <576PX )  ***********************************************************/
+
+
+@media screen and (max-width : 575px) 
+{
+  .home 
+  {
+    margin: 2rem 0.5rem 1.5rem;
+  }
+
+  .intro
+  {
+    line-height: 45px;
+  }
+
+.about-me-header
+{
+   font-size: 2.25rem;
+}
+
+.projects
+{
+  margin:  6rem 0.5rem 4rem;
+  padding: 0rem;
+}
+
+.projects-card
+{
+  margin: 2rem 0.5rem;
+}
+
+.card-img-top
+{
+  width: 100%;
+  height: 10%;
+  padding:  0.5rem;
+}
+
+.skills-button
+{
+  font-size: 0.5rem;
+  padding: 5px;
+}
+
+.certificates
+{
+  margin:  3rem 0.5rem;
+  padding: 0.5rem;
+}
+
+.certificates-header
+{
+  font-size: 2.5rem;
+}
+
+/* .certificate-pics
+{
+  margin: 2rem 1rem;
+} */
+
+.p-image
+{
+  margin:1.5rem 0.5rem;
+  width: 100%;
+  height: 10%;
+}
+
+.p-image img
+{
+  width: 100%;
+  height: 10%;
+  position: relative;
+  right: 2.5%;
+}
+
+.contact
+{
+  flex-direction: column;
+  min-height: 50vh;
+  margin:  5rem 0.5rem;
+  padding: 0.5rem;
+}
+
+.contact-desc
+{
+  font-size: 1.5rem;
+}
+
+.links
+{
+  margin-left: 0.5rem;
+}
+
+.links span
+{
+  padding-left: 1rem;
+}
+
+.github
+{
+  margin-top: 1.25rem;
+}
+
+
+
 }

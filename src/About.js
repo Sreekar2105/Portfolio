@@ -46,7 +46,7 @@ function About()
       whileHover={{boxShadow:"0px 0px 7px 8px #E5DADA"}}>
 
         <motion.div ref={ref} variants={child}> 
-        <p className='about-me-header fw-bold'>About Me</p>
+        <p className='about-me-header fw-bolder'>About Me</p>
         </motion.div>
        
         <motion.div ref={ref} variants={child}>
@@ -62,7 +62,7 @@ function About()
         </motion.div>    
 
         <motion.div ref={ref} variants={child}>   
-           <Button className='projects-button' onClick={()=>scrollToSection('projects')}>Explore My Projects</Button>
+           <button className='projects-button' onClick={()=>scrollToSection('projects')}>Explore My Projects</button>
         </motion.div>
      
     </motion.div>
