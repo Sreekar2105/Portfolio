@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Button } from 'react-bootstrap'
+import {  Row,Col } from 'react-bootstrap'
 import { scroller } from 'react-scroll'
 import { motion,useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -45,26 +45,33 @@ function About()
       id='about' className='about d-flex fw-semibold'
       whileHover={{boxShadow:"0px 0px 7px 8px #E5DADA"}}>
 
-        <motion.div ref={ref} variants={child}> 
-        <p className='about-me-header fw-bolder'>About Me</p>
-        </motion.div>
-       
-        <motion.div ref={ref} variants={child}>
-        <p className='about-me-body'>I'm Sreekar Komanduri, a recent BCA graduate and a passionate Frontend Developer with a strong foundation in
-           HTML, CSS, JavaScript, React and more. I specialize in crafting responsive and dynamic web applications that prioritize exceptional
-            user experiences. I enjoy experimenting with the latest technologies and frameworks to ensure that my projects
-              are not only functional but also engaging and interactive.My goal is to build web applications that are not only technically robust
-               but also delight users with their simplicity and elegance.</p>
-        </motion.div>
+        <Row className='gx-lg-3'>
 
-        <motion.div ref={ref} variants={child}>
-        <p className='projects-brief'> I've created a weather app, currency converter, and an e-commerce platform, highlighting my ability to build dynamic and user-friendly web applications.</p>
-        </motion.div>    
+          <Col xs={12} lg={3}>
+            <motion.div ref={ref} variants={child}> 
+                <p className='about-me-header fw-bolder'>About Me</p>
+            </motion.div>
+          </Col>
 
-        <motion.div ref={ref} variants={child}>   
-           <button className='projects-button' onClick={()=>scrollToSection('projects')}>Explore My Projects</button>
-        </motion.div>
-     
+          <Col xs={12} lg={9}>
+             <motion.div ref={ref} variants={child} clas>
+                <p className='about-me-body'>I'm Sreekar Komanduri, a recent BCA graduate and a passionate Frontend Developer with a strong foundation in
+                     HTML, CSS, JavaScript, React and more. I specialize in crafting responsive and dynamic web applications that prioritize exceptional
+                     user experiences. I enjoy experimenting with the latest technologies and frameworks to ensure that my projects
+                     are not only functional but also engaging and interactive.My goal is to build web applications that are not only technically robust
+                     but also delight users with their simplicity and elegance.</p>
+              </motion.div>
+
+               <motion.div ref={ref} variants={child}>
+                 <p className='projects-brief'> I've created a weather app, currency converter, and an e-commerce platform, highlighting my ability to build dynamic and user-friendly web applications.</p>
+               </motion.div>    
+
+               <motion.div ref={ref} variants={child}>   
+                  <button className='projects-button' onClick={()=>scrollToSection('projects')}>Explore My Projects</button>
+               </motion.div>
+          </Col>
+        </Row>
+
     </motion.div>
   )
 }

@@ -12,12 +12,12 @@ function Skills()
   let variants = {
     hidden : {
       opacity:0,
-      y:-100
+      x:-100
     },
 
     visible : {
       opacity:1,
-      y:0,
+      x:0,
       transition : {duration:0.5,delay:0.25,when:"beforeChildren",staggerChildren:0.4},
     }
   }
@@ -33,9 +33,11 @@ function Skills()
     variants={variants}
     initial="hidden"
     animate={isInView ? "visible" : "hidden" }
-    id='skills' className='skills d-flex'>
+    id='skills' className='skills d-flex justify-content-lg-evenly align-items-lg-center'>
+
       <p className='skills-header'>Skills</p>
-      <Row xs={2} lg={3} className='skills-icons'>
+      
+      <Row xs={2} md={3} lg={2} className='skills-icons'>
           <Col>
           <motion.div ref={ref} variants={child}>
           <Card className='skills-card'>

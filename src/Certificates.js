@@ -28,17 +28,26 @@ function Certificates()
     visible: { opacity: 1, x: 0,transition:{duration:0.6} },
   }
 
+  let images = [
+    {
+      img : certificate1
+    }
+  ]
+
   return (
+
     <motion.div ref={ref} variants={variants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
-       <div id='certificates' className='certificates'>
+       <div id='certificates' className='certificates gx-0'>
 
    
       <motion.div ref={ref} variants={child}>
          <p className='certificates-header'>Certifications</p>
       </motion.div>
       
-      <motion.div ref={ref} variants={child}>
-        <Image src={certificate1} alt="Image" preview />
+
+
+      <motion.div ref={ref} variants={child} className='d-flex justify-content-center align-items-center'>
+        <Image className='img-fluid' src={certificate1} alt="Image" preview />
       </motion.div>     
         
     </div>

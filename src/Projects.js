@@ -62,19 +62,19 @@ function Projects() {
 
       <p className='projects-header'>Projects</p>
 
+      <div>
+      <Row xs={1} lg={2} xxl={3} className='all-projects gx-0'>
       {
         projects.map((project, id) => (
 
-          <Row xs={1} lg={2} className='all-projects'>
-
-            <Col>
+            <Col className='d-flex align-items-stretch'>
 
               <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.25, when: "beforeChildren", staggerChildren: 0.5 }}>
 
                 <Card className='projects-card'>
 
                   <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.35, delay: 0.5 }} >
-                    <Card.Img variant="top" src={project.pic} />
+                    <Card.Img className='img-fluid' variant="top" src={project.pic} />
                   </motion.div>
 
                   <Card.Body>
@@ -115,7 +115,6 @@ function Projects() {
                       </div>
                     </motion.div>
 
-
                   </Card.Body>
 
                 </Card>
@@ -123,11 +122,11 @@ function Projects() {
 
             </Col>
 
-          </Row>
-
         ))
 
       }
+         </Row>
+      </div>
 
     </motion.div>
   )

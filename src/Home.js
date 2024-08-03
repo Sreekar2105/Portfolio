@@ -39,16 +39,16 @@ function Home()
      >
       
     <Row className='gx-0'>
-      <Col xs={12} lg={6} >
+      <Col xs={12} lg={7} >
        <div className='intro overflow-x-auto'>
           <p className='main'>Hey there, I'm <span className="text-uppercase fw-bolder">Sreekar Komanduri,</span> a Frontend Developer passionate about design and technology.</p>
           <p className='sub'>Check out my portfolio to know more about my journey in web development.</p>
         </div>
       </Col>
       
-      <Col xs={12} lg={6}>
+      <Col xs={12} lg={5}>
         <motion.img ref={ref} variants={child}
-        className='img-fluid' src={pic} width={"350px"} height={"350px"}/>
+        className='img-fluid' src={pic}/>
       </Col>
       
      

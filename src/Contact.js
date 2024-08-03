@@ -35,7 +35,7 @@ function Contact()
       <div className='contact-text'>
 
         <motion.div ref={ref} variants={child}>
-          <p className='contact-header'>Contact Me:</p>
+          <p className='contact-header text-lg-center'>Contact Me:</p>
         </motion.div>
           
           <motion.div ref={ref} variants={child}>

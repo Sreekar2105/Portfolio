@@ -39,9 +39,9 @@ function Navigationbar()
         <Navbar.Brand className='brand-name'>Portfolio</Navbar.Brand>
 
         <Navbar.Toggle onClick={()=>{setExpanded(!expanded)}} aria-controls="responsive-navbar-nav" className='toggle-menu border-2 border-black me-3 fs-4' />
-        <Navbar.Collapse className='navbar-collapse' id="responsive-navbar-nav">
+        <Navbar.Collapse className='navbar-collapse justify-content-center' id="responsive-navbar-nav">
 
-            <Nav className="me-auto text-center">
+            <Nav className="gap-lg-4 text-center">
 
                   <Nav.Link as={Link} to='home' spy={true} smooth={true} offset={offset} onClick={handleSelect} className='nav-items'>Home</Nav.Link>
               
