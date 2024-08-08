@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.91dc62f7.css",
-    "main.js": "/Portfolio/static/js/main.ecfa82c6.js",
+    "main.js": "/Portfolio/static/js/main.9a3faf88.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/certificate-1.png": "/Portfolio/static/media/certificate-1.a1537148f4b1f4404097.png",
     "static/media/primeicons.svg": "/Portfolio/static/media/primeicons.6ed59f962963a4a73af2.svg",
@@ -11,17 +11,17 @@
     "static/media/primeicons.woff": "/Portfolio/static/media/primeicons.8931fda1930c3bd21e96.woff",
     "static/media/primeicons.ttf": "/Portfolio/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
     "static/media/weather.png": "/Portfolio/static/media/weather.74dc45e2a35789ba83cb.png",
-    "static/media/Komanduri_Sreekar_Resume.pdf": "/Portfolio/static/media/Komanduri_Sreekar_Resume.dcfd763ef1f463e7b3eb.pdf",
+    "static/media/Komanduri_Sreekar_Resume.pdf": "/Portfolio/static/media/Komanduri_Sreekar_Resume.1f67b5c18574e0f75c20.pdf",
     "static/media/currency-converter.png": "/Portfolio/static/media/currency-converter.3f548f3e106a9649049e.png",
     "static/media/primeicons.woff2": "/Portfolio/static/media/primeicons.024b32cc7bf399b1a847.woff2",
     "static/media/logo.svg": "/Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Portfolio/index.html",
     "main.91dc62f7.css.map": "/Portfolio/static/css/main.91dc62f7.css.map",
-    "main.ecfa82c6.js.map": "/Portfolio/static/js/main.ecfa82c6.js.map",
+    "main.9a3faf88.js.map": "/Portfolio/static/js/main.9a3faf88.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.91dc62f7.css",
-    "static/js/main.ecfa82c6.js"
+    "static/js/main.9a3faf88.js"
   ]
 }
