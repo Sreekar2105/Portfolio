@@ -1,6 +1,7 @@
 import React from 'react'
 import gmail from '../src/images/gmail.png'
 import github from '../src/images/github.png'
+import linkedin from '../src/images/linkedin.png'
 import { motion,useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -58,6 +59,13 @@ function Contact()
                  <img src={github} className='contact-icons github-icon'/>
                  <span>- github.com/Sreekar2105</span>
                </a>
+            </motion.div>
+
+            <motion.div ref={ref} variants={child} className='linkedin'>
+              <a href='https://www.linkedin.com/in/sreekarkomanduri' target='_blank'>
+                <img src={linkedin} className='contact-icons linkedin-icon'/>
+                <span>- linkedin.com/in/sreekarkomanduri</span>
+              </a>
             </motion.div>
             
           </div>

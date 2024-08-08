@@ -3,6 +3,7 @@ import pic from '../src/images/pic.png'
 import { Row,Col } from 'react-bootstrap'
 import {  motion,useInView } from 'framer-motion'
 import { useRef } from 'react'
+import resume from '../src/Resume/Komanduri_Sreekar_Resume.pdf'
 
 function Home() 
 {
@@ -43,6 +44,7 @@ function Home()
        <div className='intro overflow-x-auto'>
           <p className='main'>Hey there, I'm <span className="text-uppercase fw-bolder">Sreekar Komanduri,</span> a Frontend Developer passionate about design and technology.</p>
           <p className='sub'>Check out my portfolio to know more about my journey in web development.</p>
+          <button className='resume-button'><a href={resume} download='Resume'>Download Resume</a></button>
         </div>
       </Col>
       
